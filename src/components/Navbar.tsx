@@ -1,8 +1,9 @@
 import {
+  Avatar,
+  AvatarBadge,
   Flex,
   Heading,
   Spacer,
-  Box,
   Text,
   Button,
   HStack,
@@ -31,9 +32,11 @@ export default function Navbar() {
       <Spacer />
 
       <HStack spacing="20px">
-        <Box bg="gray.200" p="10px">
-          M
-        </Box>
+        <Avatar>
+          <AvatarBadge width="1.3em" bg="teal.500">
+            <Text fontSize="xs">3</Text>
+          </AvatarBadge>
+        </Avatar>
         <Text>mario@gmail.com</Text>
         <Button colorScheme="purple" onClick={clickHandler}>
           Logout

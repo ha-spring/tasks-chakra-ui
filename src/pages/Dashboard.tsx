@@ -1,5 +1,6 @@
 import Tasks from "../../data/db.json";
 import {
+  Avatar,
   SimpleGrid,
   Card,
   Divider,
@@ -28,9 +29,7 @@ export default function Dashboard() {
           >
             <CardHeader>
               <Flex gap={5}>
-                <Box w="50px" h="50px">
-                  AV
-                </Box>
+                <Avatar src={task.img} />
                 <Box>
                   <Heading as="h3" size="sm">
                     {task.title}
