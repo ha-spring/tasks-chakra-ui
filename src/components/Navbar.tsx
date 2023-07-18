@@ -19,7 +19,7 @@ export default function Navbar() {
           M
         </Box>
         <Text>mario@gmail.com</Text>
-        <Button>Logout</Button>
+        <Button colorScheme="purple">Logout</Button>
       </HStack>
     </Flex>
   );
